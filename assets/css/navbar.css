@@ -1,0 +1,91 @@
+header{
+    /* margin-top: 0; */
+    height: 15vh;
+    width: 90vw;
+    /* position: sticky; */
+    background-color: rgba(41, 41, 41, 0.5);
+    border-radius: 20px;
+    box-shadow: 10px 10px 25px rgba(25, 25, 25);
+    z-index: 2;
+    backdrop-filter: blur(5px);
+}
+
+#navbar{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navbar-div-1{
+    height: 100%;
+    width: 17%;
+    display: flex;
+    margin-left: 0%;
+    align-items: center;
+}
+
+#navbar-logo{
+    height: 80%;
+    width: 43%;
+    border-radius: 10px;
+   margin-right: 5%;
+}
+
+#pagelinks{
+    height: 100%;
+    width: 26%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#pagelinks h3 a{
+    text-decoration: none;
+    color: white;
+}
+
+#search{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search input{
+    height: 20%;
+    width: 60%;
+    margin-right: 2%;
+    border-radius: 7px;
+    padding: 5px;
+    border-style: none;
+}
+
+#search button{
+    height: 25%;
+    width: 20%;
+}
+
+#profile{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile h3 a{
+    text-decoration: none;
+    color: white;
+}
+

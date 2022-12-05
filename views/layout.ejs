@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+    <%- style %>
+
+</head>
+<body>
+        <div id="after"></div>
+        <div id="before"></div>
+    <%- include('_header'); -%>
+    <%- body %>
+
+    <!-- <% if(flash.success && flash.success.length > 0){%>
+        <h2>
+            <%= flash.success %>
+        </h2>
+    <%}%> -->
+    
+    <!-- <%- include('_footer'); -%> -->
+
+
+    <%- script %>
+    <script src="https://kit.fontawesome.com/ad3c4c04de.js" crossorigin="anonymous"></script>
+    <script>
+        <% if(flash.success && flash.success.length > 0){%>
+            new Noty({
+                theme: 'relax',
+                text: '<%= flash.success%>',
+                type: 'success',
+                layout: 'topRight',
+                timeout: 1500 
+
+            }).show();
+        <%}%>
+
+        <% if(flash.error && flash.error.length > 0){%>
+            new Noty({
+                theme: 'relax',
+                text: '<%= flash.error%>',
+                type: 'error',
+                layout: 'topRight',
+                timeout: 1500 
+
+            }).show();
+        <%}%>
+    </script>
+</body>
+</html>

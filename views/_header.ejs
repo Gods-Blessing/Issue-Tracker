@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/css/navbar.css">
+
+<%if(locals.user){%>
+
+<header>
+
+    <nav id="navbar">
+        <div id="navbar-div-1">
+            <img id="navbar-logo" src="/images/bugtracker.png" alt="">
+            <div><h2>Bug <br> Tracker</h2></div>
+        </div>
+
+        <div id="pagelinks">
+            <h3><a href="/home">Home</a></h3>
+            <h3><a href="/project">Create Project</a></h3>
+
+        </div>
+
+        <div id="search">
+            <form id="searchform" action="/home/find" method="post">
+                <input id="search-input" type="text" name="search" placeholder="search">
+                <button id="search-btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="profile">
+            <a href="">
+                <img src="" alt="">
+            </a> 
+            <h3><a href="/signout">Signout</a></h3>
+        </div>
+    </nav>
+    
+</header>
+<%}%>
+
+

@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/signup.css">
+
+<div id="container">
+    <div id="card">
+        <div id="header">
+            <img id="bugtracker-img" src="/images/bugtracker.png" alt="Bug Trcaker">
+            <h2>Bug Tracker</h2>
+
+        </div>
+        <form action="/user/createuser" method="post">
+            <input class="signupform" type="text" name="name" placeholder="name" required>
+            <input class="signupform" type="email" name="email" placeholder="E-mail" required>
+            <input class="signupform" type="text" name="password" placeholder="password" required>
+            <input class="signupform" type="text" name="confirm_password" placeholder="confirm password" required>
+            <button type="submit"> Signup</button>
+        </form>
+        
+        <div id="signin">
+            <a href="/signin">
+                <p> 
+                    <u> Signin </u>
+                </p>
+            </a>
+        </div>
+
+    </div>
+</div>

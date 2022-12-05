@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/projectpage.css">
+
+<section id="projectSection">
+    <div id="project-div">
+        <h1><u>Add Project</u></h1>
+        <form id="projectform" action="/project/addproject" method="post">
+            <label class="projectlabel" for="projectName">Project Name</label>
+            <input type="text" name="projectName" id="projectName" required>
+
+            <label class="projectlabel" for="projectDescription">Description</label>
+            <textarea name="projectDescription" id="projectDescription" cols="20" rows="6"></textarea required>
+
+            <label class="projectlabel" for="author">Author</label>
+            <input type="text" name="author" id="author" required>
+            <button id="projectsubmit" type="submit">Submit</button>
+        </form>
+    </div>
+</section>

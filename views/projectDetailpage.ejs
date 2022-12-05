@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="/css/projectpagedetails.css">
+
+<section>
+    <div id="project-display">
+        <div class="delete-project">
+            <% if(locals.user.id == project.user){%>
+            <a href="/project/deleteproject/<%= project.id%>">
+                <i class="fa-solid fa-trash-can"></i>
+            </a>
+            <%}%>
+        </div>
+        <div class="project" >
+            <p><h2 class="headings">Name: </h2></p>
+            <p><h1><%= project.projectName%></h1></p>
+        </div>
+        <div class="project" id="proj-desc" >
+            <h2 class="headings">Description: </h2>
+            <div id="desc">
+                <p ><%= project.projectDescription%></p>
+            </div>
+        </div>
+        <div class="project" id="">
+            <p><h2 class="headings">Author: </h2></p>
+            <p><h1><%= project.author%></h1></p>
+        </div>
+
+        <%if(locals.user.id == project.user){%>
+        <div class="project" id="project-buttons">
+            <form action="/project/update/?projectid=<%= project._id%>&projectuserid=<%= project.user._id%>" method="post">
+                <input type="text" name="projectName" value="<%= project.projectName%>" required>
+                <textarea name="projectDescription" id="descriptioninput" cols="30" rows="10" required></textarea>
+                <input id="author-input" name="author" type="text" value="<%= project.author%>" required>
+                <button class="add-project-buttons" type="submit">Edit</button>
+            </form>
+        </div>
+        <%}%>
+
+        <div id="add-comments">
+           <form action="/comment/createcomment" method="post">
+            <input type="text" name="content" required>
+            <input type="hidden" name="projectid" value="<%= project._id%>">
+            <button type="submit">Comment</button>
+           </form>
+        </div>
+    </div>
+
+    
+
+    <div id="comments-div">
+        <h1>Comments</h1>
+        <ul id="comments-ul">
+            <% for(let i of project.comments){%>
+                <li class="comments-li">
+                    <span class="commentusername"><%= i.user.name%></span>
+                    <span><%= i.content%></span>
+                    <div class="deletebtn">
+                        <a href="/comment/delete/<%= i.id%>">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                    </div>
+                </li>
+            <%}%>
+        </ul>
+    </div>
+</section>
+

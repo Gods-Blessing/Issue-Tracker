@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="/css/bugpage.css">
+<section>
+
+    <div class="bug">
+        <div class="bugg-div">
+            <h1>
+                <span class="left">Title - </span>
+                <u>
+                    <%= bug.title%>
+                </u>
+            </h1>
+    
+            <h3>
+                <span class="left"> Description - </span>
+                <%= bug.description%>
+            </h3>
+        </div>
+
+        <div class="comment-div">
+            <form action="/comment/createcomment" method="post">
+                <input type="text" name="content" placeholder="comment...." required>
+                <input type="hidden" name="bug" value="<%= bug._id%>">
+                <button type="submit">Comment</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="comments-div">
+        <h2>Comments</h2>
+
+        <ul id="comments-ul">
+            <% for(n of bug.comment){%>
+            <li class="comment-li">
+                <%= n.content %>
+                <%= n.user.name%>
+            </li>
+            <%}%>
+        </ul>
+    </div>
+
+
+</section>

@@ -1,0 +1,185 @@
+section{
+    height: fit-content;
+    width: 70vw;
+    z-index: 1;
+    margin-top: 3%;
+}
+
+#project-display{
+    height: 50vh;
+    width: 100%;
+    box-shadow: 10px 10px 25px rgba(25, 25, 25);
+    background-color: rgba(41, 41, 41, 0.5);
+    position: relative;
+}
+
+.delete-project{
+    font-size: larger;
+    position: absolute;
+    right: 1%;
+    top: 5%;
+}
+
+.delete-project a{
+    color: white;
+}
+
+#desc{
+    word-break: break-all;
+    margin-right: 5px;
+    font-size: large;
+}
+
+#proj-desc{
+    height: 30%;
+    width: 100%;
+}
+
+.project{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.headings{
+    margin-right: 2%;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+#project-buttons{
+    height: 70%;
+    width: 50%;
+    position: relative;
+    bottom: 55%;
+    left: 40%;
+}
+
+#project-buttons form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#project-buttons form input{
+    height: 30%;
+    width: 100%;
+    margin: 0% 0px 5% 0px;
+    padding-left: 2px;
+}
+
+#descriptioninput{
+    margin-bottom: 5%;
+    padding-left: 2px;
+    width: 100%;
+    resize: none;
+}
+
+#author-input{
+    margin-top: 5%;
+}
+
+/* #project-buttons a {
+    height: 10%;
+    width: 10%;
+    font-weight: 900;
+    font-size: 0.9em;
+    margin-right: 10%;
+} */
+
+.add-project-buttons{
+    height: 20%;
+    width: 10%;
+    font-weight: 900;
+    font-size: 0.9em;
+    margin-right: 10%;
+}
+
+#add-comments{
+    height: 20%;
+    width: 50%;
+}
+
+#add-comments {
+    position: absolute;
+    bottom: 0%;
+    height: 15%;
+    width: 70%;
+    margin-left: 1%;
+}
+
+#add-comments form{
+    height: 100%;
+    width: 100%;
+}
+
+#add-comments form input {
+    height: 50%;
+    width: 70%;
+    margin-right: 10px;
+    border-radius: 5px;
+    border-style: none;
+    padding: 3px;
+    font-weight: 600;
+}
+
+#add-comments form button{
+    height: 55%;
+    width: 10%;
+    font-size: 0.7em;
+    font-weight: 600;
+    padding: 0px 2px 0px 2px;
+}
+
+#comments-div{
+    width: 70vw;
+    height: 54vh;
+    margin-top: 25px;
+    /* border: 1px solid black; */
+}
+
+#comments-div h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+#comments-ul{
+    list-style: none;
+    height: 89%;
+    width: 100%;
+    /* border: 1px brown solid; */
+    overflow-x: hidden;
+}
+
+#comments-ul::-webkit-scrollbar {
+    display: none;
+  }
+
+.comments-li{
+    position: relative;
+    height: 15%;
+    width: 100%;
+    background-color: rgba(41, 41, 41, 0.5);
+    margin-bottom: 2%;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.commentusername{
+    margin: 0px 5% 0px 1%;
+}
+.deletebtn{
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+}
+
+.fa-regular{
+    color: white;
+    font-weight: 600;
+}

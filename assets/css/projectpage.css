@@ -1,0 +1,67 @@
+#projectSection{
+    height: 70vh;
+    width: 70vw;
+    z-index: 2;
+    margin-top: 6%;
+}
+
+#project-div{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(41, 41, 41, 0.5);
+    box-shadow: 10px 10px 25px rgba(25, 25, 25);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+#project-div h1{
+    margin-left: 2%;
+}
+
+#projectform{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectlabel{
+    margin-left: 2%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+#projectName{
+    height: 7%;
+    width: 40%;
+    margin-left: 5%;
+    border-radius: 5px;
+    border-style: none;
+    padding-left: 5px;
+}
+
+#projectDescription{
+    width: 50%;
+    resize: none;
+    margin-left: 5%;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+#author{
+    height: 7%;
+    width: 40%;
+    margin-left: 5%;
+    border-radius: 5px;
+    border-style: none;
+    padding-left: 5px;
+
+}
+
+#projectsubmit{
+    height: 7%;
+    width: 7%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+

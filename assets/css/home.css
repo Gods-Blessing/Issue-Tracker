@@ -1,0 +1,154 @@
+main{
+    height: fit-content;
+    width: 80vw;
+    z-index: 2;
+    padding: 10px;
+    position: relative;
+    font-family: sans-serif;
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#description-div{
+    height: 60%;
+    width: 90%;
+    position: relative;
+    /* background-color: rgba(41, 41, 41, 0.5);
+    box-shadow: 10px 10px 25px rgba(25, 25, 25); */
+    /* backdrop-filter: blur(5px); */
+    text-align: center;
+}
+
+#description-div h1{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#description-div form{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.flex-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+#title-div{
+    height: 10%;
+    width: 100%;
+}
+
+#title-div input{
+    padding: 5px;
+    width: 40%;
+    margin: 10px;
+}
+
+#description-div form div{
+    height: 10%;
+    display: flex;
+}
+
+#description-div2{
+    margin-left: -4%;
+}
+
+#description-div2 textarea{
+    resize: none;
+}
+
+#radioinput{
+    margin-bottom: 13px;
+    margin-top: 10px;
+}
+#radioinput input{
+    margin-left: 3%;
+    margin-right: 20%;
+}
+
+#description-div form button{
+    height: 10%;
+    width: 7%;
+    margin-bottom: 13px;
+    margin-top: 10px;
+}
+
+
+
+
+
+#bugs{
+    margin-top: 5%;
+    height: 50%;
+    width: 90%;
+    
+}
+
+#bugs h1{
+    text-align: center;
+}
+
+#bugs-ul{
+    height: 31.2rem;
+    width: 100%;
+    list-style: none;
+    overflow-x: hidden;
+}
+#bugs-ul::-webkit-scrollbar {
+    display: none;
+  }
+
+.bug-li-container{
+    text-decoration: none;
+    color: white;
+}
+
+.bugs-li{
+    background-color: rgba(41, 41, 41, 0.5);
+    height: fit-content;
+    width: 100%;
+    margin-top: 2%;
+    padding: 5px 0px 5px 0px;
+}
+
+.p-username{
+    text-align: end;
+    margin-left: 5px;
+}
+
+.p-description {
+    font-size: large;
+    word-break: break-all;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.project-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-date{
+    margin-right: 5px;
+    font-size: smaller;
+}
+

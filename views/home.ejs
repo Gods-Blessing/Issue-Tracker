@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="/css/home.css">
+<title>
+    <%= title %>
+</title>
+
+<main>
+<section>
+
+    <div id="description-div">
+        <!-- <h1>
+            <u>
+                Add-Bug
+            </u>
+        </h1>
+        <form action="/bug/createbug" method="post">
+
+            <div class="flex-display" id="title-div">
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text" placeholder="title" required>
+            </div>
+
+            <div id="description-div2" class="flex-display">
+                <label for="description">Description</label>
+                <textarea  name="description" id="description" cols="52" rows="5" required placeholder="description..."></textarea>
+            </div>
+
+            <div id="radioinput">
+                <label for="open">open</label>
+                <input id="open" name="status"  type="radio" value="open" required>
+
+                <label for="close">close</label>
+                <input id="close" name="status"     type="radio" value="close" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div> -->
+
+    <div id="bugs">
+        <h1><u><b>Projects</b></u></h1>
+        
+        <ul id="bugs-ul">
+            <% for(n of projects){%>
+                <a class="bug-li-container" href="/project/projectdetailpage/<%= n.id%>">
+                <li class="bugs-li">
+                    <h3>
+                        <u>
+                            <%= n.projectName%>
+                        </u>
+                    </h3>
+
+                    <p>
+                        <p class="p-description">
+                            <%= n.projectDescription%>
+                        </p>
+                    </p>
+                    
+
+                    <div class="project-info">
+
+                        <p class="p-username">
+                            by: <%= n.user.name%>
+                        </p>
+    
+                        <p class="project-date"><%= n.createdAt.toString().substring(0,15)%></p>
+                    </div>
+                </li>
+                </a>
+            <%}%>
+        </ul>
+    </div>
+
+
+</section>
+
+
+<aside></aside>
+</main>
+
+
