@@ -1,5 +1,6 @@
 const User = require('../module/userschema');
 
+// to create a user
 module.exports.createuser = function(req,res){
     if(req.body.password == req.body.confirm_password){
         User.findOne({email: req.body.email}, function(err, user){

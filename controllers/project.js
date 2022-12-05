@@ -8,6 +8,7 @@ module.exports.projectpage = function(req,res){
 }
 
 
+// for adding of project
 module.exports.addproject = function(req,res){
     // console.log(req.user);
             Project.create({
@@ -27,8 +28,9 @@ module.exports.addproject = function(req,res){
 };
 
 
-module.exports.projectpagedetail = function(req,res){
 
+
+module.exports.projectpagedetail = function(req,res){
     Project.findById(req.params.id)
     // .populate('author')
     .populate({
@@ -54,6 +56,7 @@ module.exports.projectpagedetail = function(req,res){
 
 
 
+// for deleting of project
 module.exports.deleteproject = function(req,res){
     Project.findById(req.params.id, function(err, project){
         if(project.user == req.user.id){
@@ -70,6 +73,9 @@ module.exports.deleteproject = function(req,res){
 }
 
 
+
+
+// for updating of projects
 module.exports.update = function(req,res){
     // console.log("params",req.query.projectid);
     // console.log("user",req.query.projectuserid);

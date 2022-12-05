@@ -31,6 +31,7 @@ module.exports.signin = function(req,res){
 // }
 
 
+// for rendering the home page
 module.exports.home = function(req,res){
     // console.log(req);
     Project.find({})

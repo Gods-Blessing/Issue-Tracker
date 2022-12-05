@@ -1,6 +1,8 @@
 const Comment = require('../module/comment');
 const Project = require('../module/projectschema');
 
+
+// for creating of comments
 module.exports.createcomment = function(req,res){
     Project.findById(req.body.projectid, function(err, project){
 
@@ -26,6 +28,7 @@ module.exports.createcomment = function(req,res){
 }
 
 
+// for deleting of comments
 module.exports.delete = function(req,res){
     Comment.findById(req.params.id, function(err, comment){
         if(comment.user == req.user.id){
