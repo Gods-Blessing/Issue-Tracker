@@ -33,9 +33,9 @@ section{
 #proj-desc{
     height: 30%;
     width: 60%;
-    overflow-y: hidden;
-    overflow-x: hidden;
-
+    font-size: large;
+    overflow: hidden;
+    overflow: scroll;
 }
 
 .project{
