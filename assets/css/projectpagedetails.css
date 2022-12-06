@@ -25,14 +25,22 @@ section{
 }
 
 #desc{
+    height: 100%;
+    width: 100%;
     word-break: break-all;
     margin-right: 5px;
     font-size: large;
+    overflow: hidden;
+    overflow: scroll;
 }
+
+#desc::-webkit-scrollbar {
+    display: none;
+  }
 
 #proj-desc{
     height: 30%;
-    width: 100%;
+    width: 60%;
 }
 
 .project{
@@ -51,10 +59,10 @@ section{
 
 #project-buttons{
     height: 70%;
-    width: 50%;
+    width: 40%;
     position: relative;
     bottom: 55%;
-    left: 40%;
+    left: 60%;
 }
 
 #project-buttons form{
@@ -66,7 +74,7 @@ section{
 
 #project-buttons form input{
     height: 30%;
-    width: 100%;
+    width: 80%;
     margin: 0% 0px 5% 0px;
     padding-left: 2px;
 }
@@ -74,8 +82,8 @@ section{
 #descriptioninput{
     margin-bottom: 5%;
     padding-left: 2px;
-    width: 100%;
-    resize: none;
+    width: 80%;
+    /* resize: none; */
 }
 
 #author-input{
