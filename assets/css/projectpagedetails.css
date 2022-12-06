@@ -29,6 +29,9 @@ section{
     margin-right: 5px;
     font-size: large;
 }
+#desc::-webkit-scrollbar {
+    display: none;
+  }
 
 #proj-desc{
     height: 30%;
