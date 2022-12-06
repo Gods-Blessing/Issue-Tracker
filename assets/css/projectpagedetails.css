@@ -24,11 +24,19 @@ section{
     color: white;
 }
 
+
+
+
 #desc{
+    height: 100%;
+    width: 100%;
     word-break: break-all;
     margin-right: 5px;
     font-size: large;
+    overflow: hidden;
+    overflow: scroll;
 }
+
 #desc::-webkit-scrollbar {
     display: none;
   }
@@ -36,10 +44,8 @@ section{
 #proj-desc{
     height: 30%;
     width: 60%;
-    font-size: large;
-    overflow: hidden;
-    overflow: scroll;
 }
+
 
 .project{
     width: 90%;
